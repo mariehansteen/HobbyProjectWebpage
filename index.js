@@ -16,4 +16,8 @@ express()
 
 var app = express();
 var server = app.listen(3000);
-app.use(express.static(path.join(__dirname, 'views/p5/example')));
+app.get('/p5_game',sayHello);
+
+function sayHello(req,res){
+	res.send("Hello!");
+}
