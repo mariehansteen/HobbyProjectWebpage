@@ -16,4 +16,4 @@ express()
 
 var app = express();
 var server = app.listen(3000);
-app.use(express.static('views/p5/example'));
+app.use(express.static('views/p5/example/index.html'));
