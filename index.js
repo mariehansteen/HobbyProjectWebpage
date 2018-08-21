@@ -26,7 +26,7 @@ function sayHello(req,res){
 express()
   .use(express.static(path.join(__dirname, 'public')))
   .set('views', path.join(__dirname, 'views'))
-  .set('view engine', 'ejs')
+  .set('view engine', 'html')
   .get('/p5_game', (req, res) => res.render('p5/example/index'))
 
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
