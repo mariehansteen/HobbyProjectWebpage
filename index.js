@@ -21,3 +21,13 @@ app.get('/p5_game',sayHello);
 function sayHello(req,res){
 	res.render(app.use(express.static(path.join(__dirname, 'views/p5/example'))));
 }
+
+
+express()
+  .use(express.static(path.join(__dirname, 'public')))
+  .set('views', path.join(__dirname, 'views'))
+  .set('view engine', 'ejs')
+  .get('/p5_game', (req, res) => res.render('p5/example/index'))
+
+  .listen(PORT, () => console.log(`Listening on ${ PORT }`))
+
