@@ -22,6 +22,7 @@ app.get('/p5_game',sayHello);
 function sayHello(req,res){
 	res.send(app.use(express.static(path.join(__dirname, 'views/p5/example'))));
 	res.send("Hello! Nice to meet you");
+
 }
 
 //express()
