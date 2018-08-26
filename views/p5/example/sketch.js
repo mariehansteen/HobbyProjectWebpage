@@ -4,6 +4,7 @@ function setup() {
 }
 
 function draw() {
+	text("Hello!",200,200);
   if (mouseIsPressed) {
     fill(0);
   } else {
