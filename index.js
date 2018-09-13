@@ -10,7 +10,7 @@ express()
   .use(express.static(__dirname + '/views/p5')).set('views', path.join(__dirname, 'views'))
   //.set('view engine', 'ejs')
   .get('/', (req, res) => res.render('pages/index.ejs'))
-  .get('/MasterMind', (req, res) => res.render('p5/MasterMind/index.html'))
+  .get('/MasterMind', (req, res) => res.render('p5/MasterMind/index'))
 
   .get('/cool', (req, res) => res.send(cool()))
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
