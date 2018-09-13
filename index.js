@@ -8,14 +8,14 @@ express()
   .use(express.static(path.join(__dirname, 'public')))
   .use(express.static(__dirname + '/views/p5')).set('views', path.join(__dirname, 'views'))
   .use(express.static(__dirname + '/views/p5/example')).set('views', path.join(__dirname, 'views'))
-  .use(express.static(__dirname + '/views/p5/example/Example2')).set('views', path.join(__dirname, 'views'))
   .set('view engine', 'ejs')
   .get('/', (req, res) => res.render('pages/index'))
-  .get('/test', (req, res) => res.render('p5/example/Example2/index_MM'))
+  .get('/MasterMind', (req, res) => res.render('views/p5/MasterMind/index_MM3'))
 
   .get('/cool', (req, res) => res.send(cool()))
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
 
+//Users/mariehansteen/Documents/Lek/node-js-getting-started/views/p5/MasterMind
 
 // var app = express();
 // var server = app.listen(3000);
