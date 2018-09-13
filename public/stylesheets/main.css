@@ -14,8 +14,8 @@
     .jumbotron .btn-secondary:hover {
       background: #922B21; }
   .jumbotron p {
-    color: #d9ccee;
-    max-width: 75%;
+    color: #16A085;
+    max-width: 105%;
     margin: 1em auto 2em; }
   .navbar + .jumbotron {
     margin-top: -20px; }
